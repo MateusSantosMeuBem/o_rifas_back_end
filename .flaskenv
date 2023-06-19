@@ -1,0 +1,2 @@
+FLASK_APP=o_rifas_back/app
+FLASK_DEBUG=1
