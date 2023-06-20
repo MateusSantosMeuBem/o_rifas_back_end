@@ -1,0 +1,62 @@
+{
+    "linda": {
+        "first_number": 1,
+        "last_number": 50,
+        "pix": "<linda's_pix_value>"
+    },
+    "elian": {
+        "first_number": 51,
+        "last_number": 100,
+        "pix": "<elian's_pix_value>"
+    },
+    "mateus": {
+        "first_number": 101,
+        "last_number": 150,
+        "pix": "msm.ecp19@uea.edu.br"
+    },
+    "damaris": {
+        "first_number": 151,
+        "last_number": 200,
+        "pix": "<damaris's_pix_value>"
+    },
+    "newdon": {
+        "first_number": 201,
+        "last_number": 250,
+        "pix": "<newdon's_pix_value>"
+    },
+    "itala": {
+        "first_number": 251,
+        "last_number": 300,
+        "pix": "<itala's_pix_value>"
+    },
+    "kayro": {
+        "first_number": 301,
+        "last_number": 350,
+        "pix": "<kayro's_pix_value>"
+    },
+    "lucimara": {
+        "first_number": 351,
+        "last_number": 400,
+        "pix": "<lucimara's_pix_value>"
+    },
+    "rebeca": {
+        "first_number": 401,
+        "last_number": 450,
+        "pix": "<rebeca's_pix_value>"
+    },
+    "natalia": {
+        "first_number": 451,
+        "last_number": 500,
+        "pix": "<natalia's_pix_value>"
+    },
+    "adriene": {
+        "first_number": 501,
+        "last_number": 550,
+        "pix": "<adriene's_pix_value>"
+    },
+    "welissa": {
+        "first_number": 551,
+        "last_number": 600,
+        "pix": "<welissa's_pix_value>"
+    }
+}
