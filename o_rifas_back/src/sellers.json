@@ -2,12 +2,12 @@
     "linda": {
         "first_number": 1,
         "last_number": 50,
-        "pix": "<linda's_pix_value>"
+        "pix": "linda.15brandao@gmail.com"
     },
     "elian": {
         "first_number": 51,
         "last_number": 100,
-        "pix": "<elian's_pix_value>"
+        "pix": "elian.19batista@gmail.com"
     },
     "mateus": {
         "first_number": 101,
@@ -17,22 +17,22 @@
     "damaris": {
         "first_number": 151,
         "last_number": 200,
-        "pix": "<damaris's_pix_value>"
+        "pix": "92991723986"
     },
     "newdon": {
         "first_number": 201,
         "last_number": 250,
-        "pix": "<newdon's_pix_value>"
+        "pix": "010.088.282-03"
     },
     "itala": {
         "first_number": 251,
         "last_number": 300,
-        "pix": "<itala's_pix_value>"
+        "pix": "044.204.412-75"
     },
     "kayro": {
         "first_number": 301,
         "last_number": 350,
-        "pix": "<kayro's_pix_value>"
+        "pix": "92991723986"
     },
     "lucimara": {
         "first_number": 351,
@@ -42,21 +42,21 @@
     "rebeca": {
         "first_number": 401,
         "last_number": 450,
-        "pix": "<rebeca's_pix_value>"
+        "pix": "rebecaaxp@gmail.com"
     },
     "natalia": {
         "first_number": 451,
         "last_number": 500,
-        "pix": "<natalia's_pix_value>"
+        "pix": "92984049520"
     },
     "adriene": {
         "first_number": 501,
         "last_number": 550,
-        "pix": "<adriene's_pix_value>"
+        "pix": "92994385804"
     },
     "welissa": {
         "first_number": 551,
         "last_number": 600,
-        "pix": "<welissa's_pix_value>"
+        "pix": "92992927925"
     }
 }
