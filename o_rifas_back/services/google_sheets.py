@@ -56,6 +56,7 @@ def get_seller(name: str) -> dict:
     seller['seller_name'] = name
     seller['numbers'] = get_personal_numbers(name)
     seller['pix'] = CONFIG.sellers.get(name).get('pix')
+    seller['contact'] = CONFIG.sellers.get(name).get('contact')
     seller['sold_numbers'] = 0
     seller['avaiable_numbers'] = 0
 
@@ -128,4 +129,3 @@ def get_personal_message(name: str) -> str:
     message.append(f'<br>Chave PIX: {seller.get("pix")}')
 
     return '<br>'.join(message)
-
