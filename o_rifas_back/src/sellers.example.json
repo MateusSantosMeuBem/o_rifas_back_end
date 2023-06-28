@@ -2,6 +2,7 @@
     "seller_name": {
         "first_number": 0,
         "last_number": 0,
-        "pix": "<pix>"
+        "pix": "<pix>",
+        "contact": "<contact>"
     }
 }
