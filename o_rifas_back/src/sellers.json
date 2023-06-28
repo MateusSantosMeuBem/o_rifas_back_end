@@ -1,7 +1,7 @@
 {
     "linda": {
-        "first_number": 1,
-        "last_number": 50,
+        "first_number": 301,
+        "last_number": 400,
         "pix": "linda.15brandao@gmail.com",
         "contact": "https://wa.me/5592993169741"
     },
@@ -12,8 +12,8 @@
         "contact": "https://wa.me/5592985878449"
     },
     "mateus": {
-        "first_number": 101,
-        "last_number": 150,
+        "first_number": 301,
+        "last_number": 400,
         "pix": "msm.ecp19@uea.edu.br",
         "contact": "https://wa.me/5593991884291"
     },
@@ -34,18 +34,6 @@
         "last_number": 300,
         "pix": "044.204.412-75",
         "contact": "https://wa.me/5592986073257"
-    },
-    "kayro": {
-        "first_number": 301,
-        "last_number": 350,
-        "pix": "92991723986",
-        "contact": "https://wa.me/5592991723986"
-    },
-    "lucimara": {
-        "first_number": 351,
-        "last_number": 400,
-        "pix": "92991723986",
-        "contact": "https://wa.me/5592991723986"
     },
     "rebeca": {
         "first_number": 401,
