@@ -1,8 +1,5 @@
 """Services related to Google Sheets."""
 
-from services.credentials import (
-    CONFIG
-)
 from flask import (
     abort
 )
@@ -10,6 +7,10 @@ from flask import (
 import pandas as pd
 from pandas.core.frame import (
     DataFrame
+)
+
+from services.credentials import (
+    CONFIG
 )
 
 def get_table_info() -> DataFrame:
@@ -41,7 +42,34 @@ def get_info_as_list() -> list:
     return get_table_info().to_dict(orient='records')
 
 
-def get_personal_numbers(name: str) -> list:
+def get_seller(name: str) -> dict:
+    """
+    Get seller info from Google Sheets.
+
+    Args:
+        name (str): Name of the person.
+
+    Return (SellerSchema):
+        Seller info.
+    """
+    seller = {}
+    seller['seller_name'] = name
+    seller['numbers'] = get_personal_numbers(name)
+    seller['pix'] = CONFIG.sellers.get(name).get('pix')
+    seller['contact'] = CONFIG.sellers.get(name).get('contact')
+    seller['sold_numbers'] = 0
+    seller['avaiable_numbers'] = 0
+
+    for number in seller.get('numbers'):
+        if number.get('sold') == 'SIM':
+            seller['sold_numbers'] += 1
+        else:
+            seller['avaiable_numbers'] += 1
+
+    return seller
+
+
+def get_personal_numbers(name: str) -> list[int]:
     """
     Get personal numbers from Google Sheets.
 
@@ -61,8 +89,7 @@ def get_personal_numbers(name: str) -> list:
             for number in get_info_as_list()
             if (
                 int(number.get('number')) >= seller.get('first_number') and
-                int(number.get('number')) <= seller.get('last_number') and
-                number.get('sold') == 'NÃO'
+                int(number.get('number')) <= seller.get('last_number')
             )
         ]
 
@@ -84,7 +111,12 @@ def get_personal_message(name: str) -> str:
         Personal message.
     """
 
-    personal_numbers = get_personal_numbers(name)
+    personal_numbers = [
+        number
+        for number in get_personal_numbers(name)
+        if number.get('sold') == 'NÃO'
+    ]
+    print(f'personal_numbers: {personal_numbers}')
     message = [f'Olá! Eu tenho os seguintes números disponíveis pra rifa:']
     message.append(
         ' | '.join(
@@ -97,4 +129,3 @@ def get_personal_message(name: str) -> str:
     message.append(f'<br>Chave PIX: {seller.get("pix")}')
 
     return '<br>'.join(message)
-
