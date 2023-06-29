@@ -129,3 +129,17 @@ def get_personal_message(name: str) -> str:
     message.append(f'<br>Chave PIX: {seller.get("pix")}')
 
     return '<br>'.join(message)
+
+
+def get_sellers() -> list:
+    """
+    Get sellers list from Google Sheets.
+
+    Return (list):
+        List of dicts.
+    """
+
+    return [
+        get_seller(name)
+        for name in sorted(CONFIG.sellers.keys())
+    ]

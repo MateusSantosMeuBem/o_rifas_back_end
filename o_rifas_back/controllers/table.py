@@ -14,9 +14,25 @@ from services.google_sheets import (
     get_info_as_list,
     get_personal_message,
     get_seller,
+    get_sellers,
 )
 
 blp = Blueprint('numbers', __name__, description = 'Operations on numbers.')
+
+@blp.route('/sellers')
+class Sellers(MethodView):
+    """Controllers for Sellers."""
+
+    @blp.response(200, SellerSchema(many=True))
+    def get(self):
+        """
+        Get all sellers info.
+
+        :return list: List of sellers.
+        """
+
+        return get_sellers()
+
 
 @blp.route('/numbers')
 class Numbers(MethodView):
